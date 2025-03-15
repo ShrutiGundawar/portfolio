@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shruti's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Shruti Gundawar</h1>
+        <p>B.Tech CSE | Aspiring Web Developer</p>
+    </header>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <main>
+        <!-- About Section -->
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hello! I'm Shruti Gundawar, a passionate and creative 2nd-year B.Tech CSE student working towards becoming a professional web developer.</p>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML5 & CSS3</li>
+                <li>JavaScript Basics</li>
+                <li>Python Scripting</li>
+                <li>Java Programming</li>
+            </ul>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="projects-container">
+                <article class="project-card">
+                    <h3>Landing Page</h3>
+                    <p>A polished single-page website.</p>
+                    <button onclick="showProject('Landing Page')">View More</button>
+                </article>
+                <article class="project-card">
+                    <h3>Temperature Converter</h3>
+                    <p>An interactive tool for temperature conversion.</p>
+                    <button onclick="showProject('Temperature Converter')">View More</button>
+                </article>
+            </div>
+        </section>
+
+        <!-- Project Details Section -->
+        <section id="project-details" style="display: none;">
+            <h2>Project Details</h2>
+            <p id="project-info"></p>
+            <button onclick="hideDetails()">Go Back</button>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p>Email: shrutigundawar@gmail.com</p>
+            <p>Phone: +91 8976543210</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Shruti Gundawar | Built with passion for coding</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
